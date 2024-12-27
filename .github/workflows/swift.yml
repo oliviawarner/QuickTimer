@@ -16,7 +16,7 @@ jobs:
 
     # Step 2: Build all targets
     - name: Build all targets
-      run: xcodebuild -project QuickTimer.xcodeproj \
+      run: xcodebuild -project quick-timer.xcodeproj \
                       -alltargets \
                       -sdk watchsimulator \
                       -destination 'platform=watchOS Simulator,name=Apple Watch Series 7,OS=latest' \
