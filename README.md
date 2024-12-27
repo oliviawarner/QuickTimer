@@ -1,6 +1,7 @@
 # Quick Timer ⏱️
 
-**Quick Timer** is a simple and elegant watchOS app for setting and managing quick-set timers. 
+Began my OS dev journey with this small coding project to get myself familiar with Swift.
+**Quick Timer** is just a simple watchOS application to set, pause, and stop small timers.
 
 ## Demo Video
 [QuickTimer Demo](QuickTimer-Demo.mp4)
