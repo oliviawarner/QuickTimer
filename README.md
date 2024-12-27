@@ -17,11 +17,11 @@ Began my OS dev journey with this small coding project to get myself familiar wi
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/quick-timer-watch-app.git
+   git clone https://github.com/oliviawarner/QuickTimer.git
    ```
 2. Open the project in Xcode:
    ```bash
-   open QuickTimer.xcodeproj
+   open quick-timer.xcodeproj
    ```
 3. Build and run the app on the watchOS simulator or your Apple Watch.
 
