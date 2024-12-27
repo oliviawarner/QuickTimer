@@ -24,6 +24,13 @@
    ```
 3. Build and run the app on the watchOS simulator or your Apple Watch.
 
+## Screenshots
+![Simulator Screenshot - Apple Watch Series 10 (46mm) - 2024-12-26 at 22 36 06](https://github.com/user-attachments/assets/9712b9b4-5ab7-4305-9319-039c9521f47c)
+![Simulator Screenshot - Apple Watch Series 10 (46mm) - 2024-12-26 at 22 36 23](https://github.com/user-attachments/assets/d5565058-52a3-438d-a29e-0c3a586a95a6)
+![Simulator Screenshot - Apple Watch Series 10 (46mm) - 2024-12-26 at 22 37 15](https://github.com/user-attachments/assets/a2222231-f157-416e-a8dc-32a899036493)
+
+
+
 ## How to Use
 
 1. Open **Quick Timer** on your Apple Watch or emulator.  
