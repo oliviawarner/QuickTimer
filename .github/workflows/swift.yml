@@ -1,4 +1,4 @@
-name: Build watchOS App
+name: Build and Test watchOS App
 
 on:
   push:
@@ -14,10 +14,10 @@ jobs:
     # Step 1: Checkout the repository
     - uses: actions/checkout@v4
 
-    # Step 2: Build all targets
-    - name: Build all targets
+    # Step 2: Build using the specified scheme
+    - name: Build watchOS App
       run: xcodebuild -project quick-timer.xcodeproj \
-                      -alltargets \
+                      -scheme "quick-timer Watch App" \
                       -sdk watchsimulator \
                       -destination 'platform=watchOS Simulator,name=Apple Watch Series 7,OS=latest' \
                       clean build
