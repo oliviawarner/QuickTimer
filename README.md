@@ -2,8 +2,8 @@
 
 **Quick Timer** is a simple and elegant watchOS app for setting and managing timers. 
 
-# Demo Video
-![QuickTimer Demo]()**
+## Demo Video
+![QuickTimer Demo](QuickTimer-Demo.mp4)**
 
 ## Features
 
