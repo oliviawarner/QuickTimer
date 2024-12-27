@@ -31,6 +31,11 @@ struct TimerView: View {
                     }
                     .labelsHidden()
                     .frame(height: 50) // Compact height for Picker
+                    .onChange(of: selectedTime) { newValue in
+                        if showPicker {
+                            timeRemaining = newValue
+                        }
+                    }
 
                     Button("Set Timer") {
                         setCustomTimer()
