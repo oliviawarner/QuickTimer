@@ -1,7 +1,6 @@
-# This workflow will build a Swift project
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-swift
+# GitHub Actions workflow for building and testing a watchOS app
 
-name: Swift
+name: watchOS Build and Test
 
 on:
   push:
@@ -15,8 +14,30 @@ jobs:
     runs-on: macos-latest
 
     steps:
+    # Step 1: Checkout the repository
     - uses: actions/checkout@v4
-    - name: Build
-      run: swift build -v
-    - name: Run tests
-      run: swift test -v
+
+    # Step 2: Set up Xcode environment
+    - name: Set up Xcode
+      run: xcode-select --install
+
+    # Step 3: Install dependencies (if needed, e.g., CocoaPods)
+    # Uncomment the following lines if you use CocoaPods or other dependency managers
+    # - name: Install CocoaPods
+    #   run: pod install
+
+    # Step 4: Build the project
+    - name: Build watchOS App
+      run: xcodebuild -workspace QuickTimer.xcworkspace \
+                      -scheme QuickTimer \
+                      -sdk watchsimulator \
+                      -destination 'platform=watchOS Simulator,name=Apple Watch Series 7,OS=latest' \
+                      clean build
+
+    # Step 5: Run unit tests
+    - name: Run Tests
+      run: xcodebuild test \
+                      -workspace QuickTimer.xcworkspace \
+                      -scheme QuickTimer \
+                      -sdk watchsimulator \
+                      -destination 'platform=watchOS Simulator,name=Apple Watch Series 7,OS=latest'
