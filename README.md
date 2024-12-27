@@ -2,7 +2,6 @@
 
 **Quick Timer** is a simple and elegant watchOS app for setting and managing timers. 
 
----
 
 ## Features
 
@@ -10,8 +9,6 @@
 - **Control Options**: Start, pause, or reset timers effortlessly.  
 - **Confetti Celebration** 🎉: Celebrate when the timer ends.  
 - **Haptic Feedback**: Get tactile notifications for a seamless experience.  
-
----
 
 ## Installation
 
@@ -24,8 +21,6 @@
    open QuickTimer.xcodeproj
    ```
 3. Build and run the app on the watchOS simulator or your Apple Watch.
-
----
 
 ## How to Use
 
