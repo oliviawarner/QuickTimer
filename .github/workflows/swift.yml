@@ -16,8 +16,4 @@ jobs:
 
     # Step 2: Build using the specified scheme
     - name: Build watchOS App
-      run: xcodebuild -project quick-timer.xcodeproj \
-                      -scheme "quick-timer Watch App" \
-                      -sdk watchsimulator \
-                      -destination 'platform=watchOS Simulator,name=Apple Watch Series 7,OS=latest' \
-                      clean build
+      run: xcodebuild -project quick-timer.xcodeproj
