@@ -17,16 +17,12 @@ jobs:
     # Step 1: Checkout the repository
     - uses: actions/checkout@v4
 
-    # Step 2: Set up Xcode environment
-    - name: Set up Xcode
-      run: xcode-select --install
-
-    # Step 3: Install dependencies (if needed, e.g., CocoaPods)
+    # Step 2: Install dependencies (if needed, e.g., CocoaPods)
     # Uncomment the following lines if you use CocoaPods or other dependency managers
     # - name: Install CocoaPods
     #   run: pod install
 
-    # Step 4: Build the project
+    # Step 3: Build the project
     - name: Build watchOS App
       run: xcodebuild -workspace QuickTimer.xcworkspace \
                       -scheme QuickTimer \
@@ -34,7 +30,7 @@ jobs:
                       -destination 'platform=watchOS Simulator,name=Apple Watch Series 7,OS=latest' \
                       clean build
 
-    # Step 5: Run unit tests
+    # Step 4: Run unit tests
     - name: Run Tests
       run: xcodebuild test \
                       -workspace QuickTimer.xcworkspace \
