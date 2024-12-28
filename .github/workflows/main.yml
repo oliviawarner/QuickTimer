@@ -29,5 +29,5 @@ jobs:
       run: |
         xcodebuild test \
           -project "quick-timer.xcodeproj" \
-          -scheme "quick-timer" \
+          -scheme "quick-timer Watch App" \
           -showdestinations \
