@@ -31,3 +31,4 @@ jobs:
           -project "quick-timer.xcodeproj" \
           -scheme "quick-timer Watch App" \
           -showdestinations \
+          -destination "platform=watchOS Simulator" \
