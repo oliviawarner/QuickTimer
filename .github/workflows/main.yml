@@ -24,3 +24,37 @@ jobs:
 
     - name: Verify Xcode build version
       run: xcodebuild -version
+
+name: iOS Build and Test
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Debug list available Xcode versions
+      run: ls /Applications/
+
+    - name: Set up Xcode 16.1
+      run: sudo xcode-select -switch /Applications/Xcode_16.1.app/Contents/Developer
+
+    - name: Verify Xcode build version
+      run: xcodebuild -version
+
+    - name: Build the project
+      run: |
+        xcodebuild test \
+          -project "quick-timer.xcodeproj" \
+          -scheme "quick-timer" \
+          -showdestinations \
